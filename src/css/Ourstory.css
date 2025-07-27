@@ -1,0 +1,33 @@
+.story-img {
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.story-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+}
+
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .story-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

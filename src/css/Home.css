@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.imagcont {
+  background: url('../images/bgimg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.imagcont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.imagcont h2 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  animation: slideDown 1.5s ease-in-out;
+}
+
+.imagcont button {
+  position: relative;
+  z-index: 1;
+  animation: bounceIn 2s;
+  transition: transform 0.3s ease;
+}
+
+.imagcont button:hover {
+  transform: scale(1.1);
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+.container h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease;
+}
+
+.container p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+  .imagcont {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .imagcont h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.flw-name {
+  transition: transform 0.3s ease-in-out;
+}
+
+.flw-name:hover {
+  transform: scale(1.1);
+}

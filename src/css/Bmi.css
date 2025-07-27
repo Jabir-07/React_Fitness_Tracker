@@ -1,0 +1,36 @@
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #343a40;
+  animation: slideDown 1s;
+}
+
+.card input {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #28a745;
+  color: #fff;
+  transform: scale(1.05);
+}

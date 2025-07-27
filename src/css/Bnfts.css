@@ -1,0 +1,43 @@
+.b-container {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.fntt {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+}
+
+.confidence,
+.mood,
+.health {
+  background-color: #ffffff;
+  border-left: 6px solid #007bff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.confidence:hover,
+.mood:hover,
+.health:hover {
+  background-color: #f0f0f0;
+}
+
+.confidence h4,
+.mood h4,
+.health h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.confidence p,
+.mood p,
+.health p {
+  font-size: 1rem;
+  color: #555;
+}

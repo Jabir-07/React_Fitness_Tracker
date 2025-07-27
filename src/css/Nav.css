@@ -1,0 +1,30 @@
+.navbar {
+  
+  padding: 12px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: whitesmoke;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.nav-link.active {
+  color: orange;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
